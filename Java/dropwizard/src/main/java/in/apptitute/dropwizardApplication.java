@@ -1,5 +1,6 @@
 package in.apptitute;
 
+import in.apptitute.resources.ComingSoonController;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
@@ -21,9 +22,11 @@ public class dropwizardApplication extends Application<dropwizardConfiguration> 
     }
 
     @Override
-    public void run(final dropwizardConfiguration configuration,
-                    final Environment environment) {
-        // TODO: implement application
+    public void run(dropwizardConfiguration configuration,
+                    Environment environment) {
+        final ComingSoonController resource = new ComingSoonController(
+        );
+        environment.jersey().register(resource);
     }
 
 }
