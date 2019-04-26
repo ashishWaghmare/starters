@@ -4,4 +4,17 @@
 
 (deftest a-test
   (testing "FIXME, I fail."
-    (is (= 0 1))))
+    (is (= 1 1))))
+
+(deftest a-test
+  (testing "2 is Prime."
+    (is (isPrime 2 ) true)))
+
+(deftest a-test
+  (testing "3 is Prime."
+    (is (isPrime 3 )true)))
+
+(deftest a-test
+  (testing "4 is not Prime."
+    (is (isPrime 4 )false)))
+
