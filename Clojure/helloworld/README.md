@@ -7,6 +7,16 @@ A Clojure library designed to solve a given problem. Eventual goal is to create 
 lein uberjar
 java -jar target/helloworld-0.1.0-SNAPSHOT-standalone.jar
 
+## Testing
+
+lein test
+
+## Improvements
+
+### Filter scans input value say 10 into 10*10 = 100. It may be overkill.
+### Use previous identified numbers as non prime to use for skipping
+from "Sieve of Eratosthenes"
+
 ## License
 
 Copyright © 2019 Ashish Waghmare 
