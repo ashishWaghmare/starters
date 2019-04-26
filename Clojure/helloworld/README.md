@@ -1,14 +1,15 @@
 # helloworld
 
-A Clojure library designed to ... well, that part is up to you.
+A Clojure library designed to solve a given problem. Eventual goal is to create simple web based hello world service.
 
 ## Usage
 
-FIXME
+lein uberjar
+java -jar target/helloworld-0.1.0-SNAPSHOT-standalone.jar
 
 ## License
 
-Copyright © 2019 FIXME
+Copyright © 2019 Ashish Waghmare 
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at

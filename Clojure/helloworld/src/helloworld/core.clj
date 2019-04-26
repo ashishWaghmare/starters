@@ -21,7 +21,7 @@
 (defn prime
   "Main function for generating prime"
   [count]
-  (def x (get (split-at count (filter isPrime (range 50))) 0))
+  (def x (get (split-at count (filter isPrime (range (* count count)))) 0))
   (loop [i 1]
      (def pivot (nth x (- i 1)))
      (def muliplier (if (= i 1) 1 pivot )) 
