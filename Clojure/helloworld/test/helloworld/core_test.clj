@@ -16,5 +16,5 @@
 
 (deftest a-test
   (testing "4 is not Prime."
-    (is (isPrime 4 )false)))
+    (is (not (isPrime 4)))))
 
